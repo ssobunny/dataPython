@@ -1,0 +1,7 @@
+hello cafelist
+<h1>{{ cafeobj.name }}</h1>
+<p>{{ cafeobj.content|linebreaks }}</p>
+{% if  cafeobj.mainphoto %}
+  <img src="{{ cafeobj.mainphoto.url }}">
+{% endif %}
+<a href='http://127.0.0.1:8000/cafelist/'>Go back to Cafelist</a>
