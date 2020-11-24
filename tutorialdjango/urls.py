@@ -24,6 +24,7 @@ urlpatterns = [
     path('', index),
     path('cafelist/', cafelist),
     path('cafelist/<int:pk>', cafedetails),
+    path('sample/', sample),
 ]
 
 urlpatterns += static(settings.MEDIA_URL,

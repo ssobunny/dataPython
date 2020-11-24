@@ -13,3 +13,8 @@ def cafedetails(request, pk):
   cafeobj = Cafe.objects.get(pk=pk)
   return render(request, 'main/cafedetails.html',
                 {'cafeobj': cafeobj})
+
+def sample(request):
+  value = 2
+  return render(request, 'main/sample.html',
+                {'value': value})
