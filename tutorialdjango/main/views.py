@@ -15,6 +15,7 @@ def cafedetails(request, pk):
                 {'cafeobj': cafeobj})
 
 def sample(request):
-  value = 2
+  value = [100, 200, 300]
+  valueD = {'jeju':'orange', 'kangwon':'watermelon'}
   return render(request, 'main/sample.html',
-                {'value': value})
+                {'value': value, 'valueD': valueD})

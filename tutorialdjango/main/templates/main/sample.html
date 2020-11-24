@@ -6,6 +6,12 @@
 </head>
 <body>
   {# 변수 #}
-  {{ value }}
+  ● value : {{ value }}<br>
+  ● valueD : {{ valueD }}<br>
+  ● valueD의 jeju : {{ valueD.jeju }}<br>
+  ● valueD의 items : {{ valueD.items }}<br>
+  <p>1. value가 dict면 value['jeju'] value의 key값으로 찾음</p>
+  <p>2. value가 함수이거나 클래스라면 멤버나 메서드를 찾는다.</p>
+  ● value의 두번째 : {{ value.2 }}
 </body>
 </html>

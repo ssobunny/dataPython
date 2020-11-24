@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from tutorialdjango.main.views import index, cafelist, cafedetails
+from tutorialdjango.main.views import index, cafelist, cafedetails, sample
 from django.conf.urls.static import static
 from django.conf import settings
 
